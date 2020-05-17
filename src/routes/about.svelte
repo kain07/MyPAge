@@ -4,6 +4,14 @@
 
 
 <style>
+ h1{
+      color:#0F4C75 ;
+  }
+
+  h3 {
+      color:#3282b8; 
+  }
+
     .certificaciones {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -27,19 +35,26 @@
 		margin-right: 20px;
 	}
 
+	@media (max-width: 1020px){
+		.certificaciones{
+			flex-wrap: wrap;
+			display: flex;
+		}
+	}
+
 </style>
 
 <h1>Hola, Soy César Alexander Gómez</h1>
 <div>
-	<strong>¿Quien soy?</strong>
+	<h3><strong>¿Quien soy?</strong></h3>
 		<p>Soy consultor de redes wireless, con mas de 12 años de experiencia en telecomunicaciones, desarrollador full stack junior. </p>
-		<strong>Trayectoria</strong>
+	<h3><strong>Trayectoria</strong></h3>	
 	<p> 
 		<li>
 		Ingeniero preventa Senior
 		</li> 
 		<li>
-		Gerente de producto tecnico
+		Gerente de producto tecnico de conectividad
 		</li> 
 		<li>
 		Gerente de diseño y desarrollo de soluciones
@@ -57,7 +72,7 @@
 		Ingeniero de Aprovisionamiento y Backbone
 		</li> 
 	</p>
-	<strong>Certificaciones</strong>
+	<h3><strong>Certificaciones</strong></h3>
 	<div>
 		<div class="certificaciones">
     		<figure>

@@ -4,7 +4,7 @@ import { quintOut } from "svelte/easing";
 
 let images = [
   "Bienvenidos-Wi-Fi.gif",
-  "great-success.png",
+  "wordcloud_WiFi.png",
   "WLANTech-logo.png",
 ]
 
@@ -12,7 +12,7 @@ let activeIndex = 0;
 setInterval(() => {
   let next = activeIndex +1;
   activeIndex = next == 3 ? 0 : next;
-}, 6000);
+}, 7000);
 
 </script>
 
@@ -26,8 +26,7 @@ setInterval(() => {
     max-height: 500px;
   }
 
-  @media (max-width: 1020px) {
-
+  @media screen and (max-width: 1024px) {
     img {
       max-width: 800px;
     }

@@ -9,6 +9,19 @@
 
 const posts = [
 	{
+		title: 'Link to Medium',
+		slug: 'Link to Medium',
+		html: `
+		<a href='https://medium.com/@cagc07' target="_blank">Mi Blog en Medium</a>`
+	},
+	{
+		title: 'Canal de Youtube',
+		slug: 'Canal de Youtube',
+		html: `
+		<a href='https://www.youtube.com/channel/UCUviayKGvGUZG9iM9-8Raeg' target="_blank">Canal de Youtube</a>`
+	}
+
+	/* {
 		title: 'What is Sapper?',
 		slug: 'what-is-sapper',
 		html: `
@@ -82,7 +95,7 @@ const posts = [
 		html: `
 			<p>We're so glad you asked! Come on over to the <a href='https://github.com/sveltejs/svelte'>Svelte</a> and <a href='https://github.com/sveltejs/sapper'>Sapper</a> repos, and join us in the <a href='https://svelte.dev/chat'>Discord chatroom</a>. Everyone is welcome, especially you!</p>
 		`
-	}
+	} */
 ];
 
 posts.forEach(post => {

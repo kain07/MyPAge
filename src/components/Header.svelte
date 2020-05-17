@@ -13,6 +13,13 @@
     padding: 2em;
     width: 100%;
   }
+
+  @media screen and (max-width: 767px) {
+    header {
+      display: block;
+      
+    }
+  }
 </style>
 
 <header>

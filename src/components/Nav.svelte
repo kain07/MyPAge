@@ -47,10 +47,20 @@ nav {
   .selected::before {
     background: #0F4C75;
   }
+
+  @media screen and (max-width: 767){
+    nav {
+      display: block;
+      height: auto;
+    }
+    a{
+      justify-content: center;
+    }
+  }
 </style>
 
 <nav>
-  <a class='{segment === undefined ? "selected" : ""}' href='.'>Inicio</a>
+  <!-- <a class='{segment === undefined ? "selected" : ""}' href='.'>Inicio</a> -->
   <a class='{segment === "Productos" ? "selected" : ""}' href='Productos'>Productos</a>
   <a class='{segment === "Servicios" ? "selected" : ""}' href='Servicios'>Servicios</a>
   <a class='{segment === "about" ? "selected" : ""}' href='about'>Acerca</a>
