@@ -91,4 +91,15 @@
 	</div>
 </div>
 
+<section class="contacto">
+<div>
+<h3><strong>Contacto</strong></h3>
+<a href="mailto:info@wlantechnologies.com">info@wlantechnologies.com</a>
+|
+cel: 300 4306952
+<br>
+Bogotá - Colombia
+</div>
+</section>
+
 
