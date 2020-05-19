@@ -54,7 +54,7 @@
 		Ingeniero preventa Senior
 		</li> 
 		<li>
-		Gerente de producto tecnico de conectividad
+		Gerente de producto técnico de conectividad
 		</li> 
 		<li>
 		Gerente de diseño y desarrollo de soluciones

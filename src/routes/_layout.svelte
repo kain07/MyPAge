@@ -10,9 +10,9 @@
     flex-direction: column;
     min-height: 100%;
     min-height: 100vh;
+    
   }
-
-  main {
+   main {
     flex: 1;
     position: relative;
     margin: 0 auto;
@@ -22,8 +22,8 @@
     box-sizing: border-box;
     width: 100%;
     display: flex;
-    flex-direction: column;
-  }
+    flex-direction: column; 
+  } 
 
   footer {
     color: #0F4C75;
@@ -38,16 +38,18 @@
 </style>
 
 <div class="layout">
+
   <Header {segment}/>
 
   <main>
-    <slot></slot>
+    <slot>
+    </slot>
   </main>
 
   <footer>
     <span>
-      &copy; {new Date().getFullYear()} WLANTechnologies.
-      Powered by <a href="https://sapper.svelte.dev" target="_blank">Sapper</a>.
+      &copy; {new Date().getFullYear()} WLANTechnologies - 
+      info@wlantechnologies.com
     </span>
   </footer>
 </div>

@@ -21,7 +21,7 @@
 	<title>Blog</title>
 </svelte:head>
 
-<h1>Recent posts</h1>
+<h1>Lugares donde publico contenido referente a redes Wi-Fi</h1>
 
 <ul>
 	{#each posts as post}

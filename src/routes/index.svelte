@@ -1,52 +1,80 @@
-<script>
-import { fade, fly, slide} from 'svelte/transition';
-import { quintOut } from "svelte/easing";
-
-let images = [
-  "Bienvenidos-Wi-Fi.gif",
-  "wordcloud_WiFi.png",
-  "WLANTech-logo.png",
-]
-
-let activeIndex = 0;
-setInterval(() => {
-  let next = activeIndex +1;
-  activeIndex = next == 3 ? 0 : next;
-}, 7000);
-
-</script>
-
 <style>
+h1{
+      color:#0F4C75 ;
+  }
 
+.home-container {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    margin: 2em 0;
+    min-height: 400px;
+  }
+
+  .home-copy {
+    flex: 1;
+  }
+
+  h1 {
+    font-weight: 700;
+    margin-bottom: 0.5em;
+  }
+
+  p {
+    font-size: 1.4em;
+    line-height: 1.5;
+  }
+
+  figure {
+    margin: 0 1em;
+    text-align: center;
+  }
+
+  figcaption {
+    font-size: .8em;
+    font-style: italic;
+  }
 
   img {
     width: 100%;
-    height: 100%;
-    max-width: 1080px;
-    max-height: 500px;
+    max-width: 400px;
   }
 
-  @media screen and (max-width: 1024px) {
+  @media (max-width: 1020px) {
+    p {
+      font-size: 1.2em;
+    }
+
     img {
-      max-width: 800px;
+      max-width: 300px;
     }
   }
 
+  @media (max-width: 800px) {
+    .home-container {
+      flex-direction: column;
+    }
+
+    .home-copy {
+      flex: 0;
+      padding-bottom: 2em;
+      text-align: center;
+    }
+  }
 </style>
 
 <svelte:head>
-  <title>WLANTechnologies</title>
+  <title>Bienvenidos a WLANTechnologies</title>
 </svelte:head>
 
+<div class="home-container">
+  <div class="home-copy">
+    <h1>Bienvenidos a WLANTechnologies</h1>
+<!--     <p>Check out the docs on <a href="https://www.github.com/Charca/sapper-blog-template" target="_blank">GitHub</a> to get started.</p>
+ -->  </div>
 
-<section style="display:flex;justify-content:center">
-  {#each images as image, i}
-    {#if activeIndex === i}
-      <img
-        transition:slide={{ delay: 500, duration: 300, easing: quintOut }}
-        style="position:absolute"
-        src={image}
-        alt="Presentation" />
-    {/if}
-  {/each}
-</section>
+  <figure>
+    <img alt='Person typing on laptop' src='wordcloud_WiFi.png'>
+  </figure>
+</div>
