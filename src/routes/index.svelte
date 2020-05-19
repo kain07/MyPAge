@@ -38,7 +38,7 @@ h1{
 
   img {
     width: 100%;
-    max-width: 400px;
+    max-width: 700px;
   }
 
   @media (max-width: 1020px) {
